@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- h태그 : 본문 내에서 제목을 표현하는 태그 1~6 
+               : 글자 크기도 기본글자 크기보다 커지고 굵어짐, 6으로 갈 수록 글자크기 작아짐
+               : 한 줄에 하나 씩만 나타나게 해주는 태그 -->
+    <h1>제목1</h1>
+    <h2>제목2</h2>
+    <h3>제목3</h3>
+    <h4>제목4</h4>
+    <h5>제목5</h5>
+    <h6>제목6</h6>
+
+    <!-- p태그    : 본문의 내용을 단락으로 표현하는 태그 -->
+    <!-- span태그 : 본문 안에서 하나의 문장표현 할 때 사용하는 태그  
+                  : 한 줄에 여러 개의 요소를 표현할 수 있다(display 속성) -->
+    <!-- br태그   : 줄 바꿈 태그, 개행 -->
+
+    <p style="color: crimson;">
+        <!-- b태그      : 굵은 글자 태그, 강조X -->
+        <!-- strong태그 : 굵은 글자 태그, 강조(중요표시), 웹브라우저에서 봤을 때 강조표시 되어있음 -->
+        <!-- i태그      : 기울임채 -->
+        <!-- em태그     : 기울임채, 강조(실제로 보여지는 것) -->
+        <!-- u태그      : 밑줄 -->
+        all <b>around</b> you<br>
+        이대로 <strong>시간이</strong> 멈췄으면 해<br>
+        <!-- a태그 : 하이퍼 링크 만들어 주는 태그 
+                 아직 이동할 경로를 정하지 않은 경우에는 # 으로 쓰는 게 일반적임! (하이퍼레퍼런스) -->
+        <a href="https://www.naver.com">close to my heart</a>
+        <!-- 경로 설정 -->
+        <!-- 1. 절대 경로 - 외부 서버(제공하는 있는 경로)나 내부 서버에서도 사용 가능 -->
+        <!-- 2. 상대 경로 - 현재 위치를 기반으로 상대 위치를 찾아가는 경로
+                           내가 만든(내부 서버) 파일을 찾아갈 때 쓸 수 있는 경로 -->
+
+        <!--  ./ (맨 앞에) : 현재 위치를 기준으로(생략가능) -->
+        <!--   / (맨 앞에 나오는 경우) : 최상단 위치를 기준으로 -->
+        <!--   / (중간에 나오는 경우)  : 폴더 안으로 들어가겠다는 것 -->
+        <!--  ../     : 폴더 밖으로 나가겠다 -->
+        
+        <a href="./Ex01Web.html">think <i>about</i> you</a>
+        <!-- 먼저 HTML의 Ex02에서 나가고 temp의 Ex01로 들어가겠다는 것 -->
+        <a href="../temp/Ex01Web.html"><em>어두운 밤</em> 속에 홀로 있을때</a>
+        <!-- /를 처음에 쓰는 순간 WEB(CLIENT)이 기준이 됨 -->
+        <a href="/temp/Ex01Web.html"><u>light me up like the stars</u></a>
+        <!-- /는 생략이 가능하여 / 없이 그냥 써도 되고 ./랑 동일-->
+        <a href="Ex01Web.html"> do you know how i'm feeling?<a>
+                <span style="color: aqua;">what you mean to me</span>
+                <span>i'll lend you my shoulders to lean on</span>
+                promise i'm gonna be there
+                as long as you need
+                yes i'll do anything for you
+                you light up my life
+                with your smile
+                so tell me you want me
+                when you get lonely
+                remember to call me every time
+                cause you are the only
+                exception i find
+                and no matter where you are
+                always be by your side
+                all about you
+                내 머릿속에 가득한 melodies
+                never stop oh
+                너에게 닿길 바래
+                i'll sing it for you till the end
+                if you stay next to me
+                you know how i'm feeling?
+                what you mean to me
+                i'll lend you my shoulders to lean on
+                promise i'm gonna be there
+                as long as you need
+                just to see your smile
+                so tell me you want me
+                when you get lonely
+                remember to call me every time
+                cause you are the only
+                exception i find
+                and no matter where you are
+                always be by your side nah
+                always be by your side nah
+                always be by your side
+                언제나 널 안아줄게
+                there's nobody else besides you
+                내 마음을 알게 될거야
+                hope you feel my love
+                so tell me you want me
+                when you get lonely
+                remember to call me every time
+                cause you are the only
+                exception i find
+                and no matter where you are
+                always be by your side nah
+                always be by your side nah
+                always be by your side
+    </p>
+    <!-- hr태그   : 수평줄 태그, 본문 구분 시에 사용 -->
+    <hr>
+
+</body>
+
+</html>

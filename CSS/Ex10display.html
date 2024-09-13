@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            display:none;
+        }
+        a:hover+span{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <!-- 형제, display 속성 활용하여 마우스를 네이버나 다음에 올렸을 때 주소창이 뜨게 하기 -->
+    <a href="#">네이버</a>
+    <span>www.naver.com</span>
+
+    <br>
+    <a href="#">다음</a>
+    <span>www.daum.net</span>
+</body>
+</html>

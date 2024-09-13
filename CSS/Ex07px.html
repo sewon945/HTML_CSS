@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #i1{
+            /* px : 고정크기 (화면크기X)*/
+            font-size: 20px;
+        }
+
+        /* em : 부모요소 크기(고정크기 지정해줘야함)에 따른 배수 단위 */
+        div{
+            font-size: 30px;
+            /* 테두리 굵기 색깔 실선(점선:dotted) */
+            border: 1px black solid;
+            /* 크기조정 */
+            width: 50%;
+        }
+
+        #i2{
+            /* 부모 요소의 글씨크기를 2배로 지정 (부모요소크기 *2 => 30 * 2=> 60px) */
+            font-size: 2em;
+        }
+
+        /* rem : html 요소 글씨크기(16px)에 따른 배수 단위 */
+        #i3{
+            /* 2rem = 32px */
+            font-size: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 글자 기본크기 : 16px = body(html) 태그의 글자 기본크기 -->
+    데이터디자인
+    <p id="i1">데이터디자인</p>
+    <!-- 네모박스태그 -->
+    <!-- div가 p태그의 부모가 되는 것 -->
+    <div>
+        데이터디자인
+        <p id="i2">데이터디자인</p>
+        <p id="i3">데이터디자인</p>
+    </div>
+</body>
+</html>

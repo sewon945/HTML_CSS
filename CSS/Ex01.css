@@ -1,0 +1,8 @@
+/* 외부스타일 : html과 분리해서 외부 파일로 불러와서 사용하는 것 */
+span{
+    color: pink;
+}
+
+p{
+    color: chartreuse;
+}

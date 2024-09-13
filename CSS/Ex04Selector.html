@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* apple1 과 apple2 색깔 바꿔주기 */
+        /* 근접 후행 */
+        plate+apple { 
+            color: yellow;
+        }
+        
+        /* .small 자리는 태그도 올 수 있고 클래스 이름 등등 다 올 수 있다 */
+        plate+.small{
+            color: red;
+        }
+
+        /* 그룹 선택자 : 선택자를 여러 개 지정해서 같은 스타일을 적용하고 싶을 때 사용 */
+        apple:nth-child(3), apple:nth-child(5){
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table">
+        <bento>
+            <apple class="small" />
+        </bento>
+        <plate>plate1</plate>
+        <apple class="small">apple1</apple>
+        <plate>plate2</plate>
+        <apple>apple2</apple>
+        <apple class="small">apple3</apple>
+        <apple class="small">apple4</apple>
+    </div>
+</body>
+
+</html>

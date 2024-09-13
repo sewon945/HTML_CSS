@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        /* #은 각각 지정해주는 것 */
+        #i1{
+            background-color: aquamarine;
+            /* i1번이 떠올라서 브라우저 창에서는 i2번이랑 겹쳐보이는 것 */
+            float: left;
+        }
+        #i2{
+            background-color: blueviolet;
+            /* i1번이 왼쪽으로 떠있고 i2번도 왼쪽으로 떠오르는데 i1번이 이미 왼쪽으로 떠올라서 i1번 옆으로 떠오른다
+            i3번은 i1번이랑 겹쳐보임 */
+            float: right;
+        }
+        /* float : 근접해있는 태그에 영향을 미친다 (div크기만큼만 차지하는 것) */
+
+        /* clear : float의 영향을 미치지 않게끔 해주는 것(div는 한 줄에 하나 씩 오게끔 자기 자리 찾아주는 것) */
+        #i3{
+            clear: both;
+            /* 화면상에서 가장 오른쪽으로 떠오름 */
+            float:right;
+            background-color: chartreuse;
+            
+        }
+        #i4{
+            clear: both;
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <!-- div는 한 줄에 하나 씩 -->
+    <div id="i1"></div>
+    <div id="i2"></div>
+    <div id="i3"></div>
+    <div id="i4"></div>
+</body>
+</html>

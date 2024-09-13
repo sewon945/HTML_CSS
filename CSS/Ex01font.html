@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Ex01.css"> 
+    <!-- 위에서부터 적용되기에 가지고 올 링크태그는 style 위에 -->
+    
+    <!-- style : html문서 안에 css를 작성할 수 있는 영역 (여기 안에서만 사용 가능) -->
+    <!-- 인라인스타일이 내부스타일보다 우선순위가 높다(아래 정연희의 색이 바뀐 거 보니까)
+         내부스타일보다 외부스타일이 우선순위가 더 낮다 (인라인 > 내부 > 외부) -->
+    <!-- 내부 스타일 : head에 style태그 생성한 후 스타일 지정 -->
+    <style>
+        /* 웹 폰트 적용 형식 */
+        @font-face {
+            font-family: 'KyoboHandwriting2023wsa';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2404-2@1.0/KyoboHandwriting2023wsa.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /*  CSS 주석(style 안) : ctrl + /  */
+
+        /* 웹캐시(cache) */
+        /* 네이버 서버 - (웹페이지(html,css,js))
+         - 다운로드 받아옴 
+        크롬 브라우저(사용자-클라이언트 프로그램) */
+        /* 웹캐싱 : 사용자가ㅏ 페이지를 요청할 때마다 서버에서 다운로드 받아오는 게 아니라 
+        페이지 구성 파일들이 크게 수정사항이 없으면 클라이언트 pc에 저장(웹페이지(html,css,js)) 해놓음
+        => 적용이 안되어있으면 캐시 삭제(인터넷 사용 기록 삭제 or ctrl + F5) 
+        브라우저(서버)에서 적용이 안되어있으면 여기서 쓴 게 적용이 안된 것 */
+        
+        span {
+            color: darkolivegreen;
+            font-size: 50px;
+            /* 글자 두께 */
+            font-weight: bold;
+            /* 기울임채 */
+            font-style: italic;
+             /* 적용하고 싶은 폰트 값을 위 font-family에서 가져와서 붙여넣기  */
+            font-family: 'KyoboHandwriting2023wsa'; 
+             /* 밑줄 underline, 위에줄 overline */
+             text-decoration: underline;
+             color:aqua
+        }
+         /* 위 쪽에 있는 것보다 아래쪽에 있는 게 적용된다 (초록색,아쿠아색이 아닌 브라운이 적용됨) */
+         span{
+            color: brown;
+        } 
+    </style>
+</head>
+
+<body>
+    <!-- <style>li{}</style>  두 개 이상의 속성들도 쓸 수 있다.
+     li - 무엇을?   color:red; - 어떻게? -->
+    <span>강예진</span>
+    <!-- 인라인스타일 : 태그에 style 속성으로 스타일 지정 -->
+    <!-- html 코드 가독성 저하 => 지양(최종에서 급할 때만 쓰는 것임) -->
+    <span style="color:blueviolet">정연희</span>
+    <span>이주희</span>
+
+    <p>데이터디자인 엔지니어 양성과정</p>
+</body>
+
+</html>

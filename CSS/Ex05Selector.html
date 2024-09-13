@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        span{
+            font-size: 80px;
+        }
+
+        /* 상태 선택자 : 사용자가 (특정한)액션을 취했을 때 (마우스  올렸을 때 / 클릭) 선택되는 선택자 */
+        /* 어디에 마우스를 올릴건지(span) : 선택자 */
+        /* 선택자에 마우스를 올리면 바뀜 */
+        /* transition : 애니매이션 효과(2초동안 서서히 커짐(글자크기를 크게 키워놔서)) */
+         span:hover{   /* 마우스 올리고 있을 때 */
+            color:blue;
+            font-size: 160px;
+            transition: 2s;
+        }
+
+        /* 커져있을 때 클릭을 하고 있으면 아래와 같이 지정해준 것처럼 점점 바뀜 */
+        span:active{  /* 마우스 클릭하고 있을 때 */
+            color: darkgoldenrod;
+            font-size: 50px;
+        }
+
+        /* 체크박스 or radio 선택 했을 때 */
+        input[type=checkbox]:checked{
+            width: 200px; /* 가로길이*/
+            height: 200px; /* 세로길이 */
+        }
+
+        /* focus : 입력창에 입력 시(입력창 클릭 시) */
+        input[type=text]:focus{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <span>강예진</span>
+    <input type="checkbox">
+    <input type="text">
+</body>
+</html>

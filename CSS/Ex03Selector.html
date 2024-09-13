@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ul태그 자손 중에 li태그를 선택하겠다 */
+        /* 자손 선택자 : 띄어쓰기 한 칸 */
+        ul li{
+            color: blue;
+        }
+        /* ul태그 자식 중에 li태그를 선택하겠다 */
+        /* 자식 선택자 : > (닫는 꺽새) */
+        ul>li{
+            color: cadetblue;
+        }
+        /* 클래스가 c1으로 지정되어있는 요소의 형제를 선택하겠다 */
+        /* 후행(형제) 선택자 : ~       (c1보다 아래 쪽에 있는 *모든* 형제) */
+        .c1~li{
+            color: crimson;
+        }
+        .c1~span{
+            color: blueviolet
+        }
+        /* 클래스가 c1으로 지정되어있는 요소의 형제를 선택하겠다 */
+        /* 근접 후행 선택자 : +       (c1의 *바로 아래*에 있는 형제) */
+        .c1+li{
+            color: chartreuse;
+        }
+        .c1+span{
+            color:darkorange;
+        }
+        /* nth-chlid : 특정 순서의 자식요소 선택 */
+        /* ol태그 자식 중에 세 번째 li태그 자식 선택 */
+        /* 브라우저에서 볼 때는 span태그도 순서를 포함시키기 때문에 "복습하기"가 아닌 span이 지정됨 */
+        ol>li:nth-child(3){
+            color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <details>
+        <summary>올바른 개발자 생활</summary>
+
+        <ul>
+            <li >쉬는 시간에 5분정도 먼 곳을 바라본다.</li>
+            <li >1시간마다 스트레칭을 한다.</li>
+            <li >거북목이 되지 않도록 목을 편다.</li>
+            <ol>
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+            </ol>
+        </ul>
+
+        <dl>
+            <dt>연수생 수칙</dt>
+
+            <ol>
+                <li class="c1">무단지각하지 않기</li>
+                <li>무단결석하지 않기</li>
+                <span>(불가피할 땐 꼭 담당연구원에게 미리 말하기)</span>
+                <li>복습하기</li>
+            </ol>
+        </dl>
+    </details>
+</body>
+</html>

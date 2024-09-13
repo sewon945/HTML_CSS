@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 코드 * 몇 개 : 자동 완성   ex)  ul>li*3 , ol>li*3 -->
+
+    <h4>여행준비물</h4>
+    <!-- ul : 순서가 없는 리스트 -->
+    <!-- ex) ul만 쓰면 동그라미로 순서 알려줌 , ul에 type="square" 네모로 바뀜-->
+    <ul type="square">
+        <li>여권</li>
+        <li>옷</li>
+        <li>돈</li>
+    </ul>
+
+    <h4>오늘 일정</h4>
+    <!-- ol :  순서가 있는 리스트 -->
+    <ol type="A">
+        <li>카페</li>
+        <li>밥</li>
+        <!-- 리스트 안 쪽에 또다른 리스트 작성 가능 -->
+        <ul>
+            <li>크림순대국밥</li>
+            <li>크림뚝불</li>
+        </ul>
+        <li>영화</li>
+    </ol>
+
+    <!-- summary만 보이다가 화살표를 눌러주면 그 아래있는 것들도 보여주는 형식 -->
+    <details>
+        <summary>오늘 일정</summary>
+        <ol type="A">
+            <li>카페</li>
+            <li>밥</li>
+            <ul>
+                <li>크림순대국밥</li>
+                <li>크림뚝불</li>
+            </ul>
+            <li>영화</li>
+        </ol>
+    </details>
+
+</body>
+
+</html>

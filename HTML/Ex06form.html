@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- form   : 입력폼 만들 때 사용하는 태그(서버로 값을 제출할 때) -->
+    <!-- action : 어디로 값을 보낼건지 (요청을 처리할 서버 주소) -->
+    <!-- method : 어떤 값으로 보낼건지, 요청하는 방식 (가져오는 요청 / 삭제 / 추가) -->
+    <form action="#">
+        <!-- value : input태그가 가지고 있는 실제 값(이 값이 실제로 나중에 자동으로 서버로 전송되는 값) -->
+        <!-- name  : 서버로 값이 전송되었을 때 식별자 (input태그에서 필수로 작성해줘야함) -->
+        <!-- required : 아이디를 맞춰주게끔 입력란 작성하라고 뜸 -->
+        <!-- placeholder : 힌트 -->
+        <input type="text" name="id" placeholder="아이디" value="asdfg" required><br>
+        <!-- readonly : 추가를 막을 때 , 수정할 수 없게끔 해줌 -->
+        <input type="text" name="name" value="오세원" readonly><br>
+        <!-- password는 화면상에서 보이지 않게끔 가려줌 -->
+        <input type="password" name="pw"><br>
+        <input type="email" name="email"><br>
+        <!-- ex) 010-0000-0000 -->
+        <!-- [0-9]{4} : 0부터 9까지 네 자리 수 -->
+        <input type="tel" name="tel" pattern="[0-1]{3}-[0-9]{4}-[0-9]{4}" title="포맷을 맞춰주세요"><br>
+        
+        <!-- radio : 클릭, 선택할 수 있게끔 뜬다, 선택지는 태그 앞이나 뒤에 적어주기 -->
+        <!-- radio 그룹화 해주기 : 하나만 선택 가능하게끔 그룹을 묶어주어야함 name을 똑같이 맞춰주기 -->
+        <h3>성별</h3>
+        <input type="radio" value="m" name="gender">남자
+        <input type="radio" value="w" name="gender">여자
+
+        <!-- checkbox : 복수선택 가능 / 속성 안에 선택지를 추가하는 게 아니라 앞이나 뒤에 써주기 -->
+        <!-- name을 맞춰주면 선택한 값이 한 번에 묶어져서 가지고 올 수 있게끔 해준다 -->
+        <h3>취미</h3>
+        <input type="checkbox" value="soccer" name="hobby">축구
+        <input type="checkbox" value="bascketball" name="hobby">농구
+        <input type="checkbox" value="baseball" name="hobby">야구
+        <br>
+
+        <!-- 파일 선택 기능 -->
+        <input type="file" name="file"><br> <!-- 파일과 메타데이터들이 전송 -->
+        <!-- 컬러 선택 기능 -->
+        <input type="color"><br><!-- 생삭코드 #000000 영문 6자리 서버로 전송 -->
+        <!-- 캘린더에서 날짜 선택 -->
+        <input type="date"><br>
+        <!-- 숫자만 입력 최소값, 최대값 지정 가능 -->
+        <input type="number" min="0" max="20"><br>
+
+        <select name="sel">
+            <option>a</option>
+            <option>b</option>
+            <option>c</option>
+        </select>
+        <br>
+
+        <input type="text" list="list">  <!-- list에 id값을 적었던 list를 적어주면 된다-->
+
+        <datalist id="list">
+            <option>opt1</option>
+            <option>opt2</option>
+            <option>opt3</option>
+        </datalist>
+        <br>
+
+        <!-- textarea : 여러 줄의 빈 작성칸 -->
+        <!-- rows : 세로길이 ex) 20 -> 20줄 / cols : 가로 글씨  ex) 100 -> 100글자 -->
+        <textarea rows="20" cols="100" name="ta"></textarea>
+
+        <!-- 초기화 버튼 (옵션) -->
+        <input type="reset">
+        <!-- form태그에 필수적으로 작성해야 하는 버튼(제출) -->
+        <input type="submit">
+    </form>
+</body>
+</html>

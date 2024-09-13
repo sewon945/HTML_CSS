@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 외부 서버에 있는 것은 절대 경로로 가져오기 (src 경로 꼭 써주기)-->
+    <img src="https://image.newsis.com/2023/07/12/NISI20230712_0001313626_web.jpg" alt="">
+    <img src="./cat.jpg" width="400" height="400">
+    <img src="../cat.jpg" alt="고양이">
+
+    <!-- 상대경로 : 최상위폴더기준 / 현재위치를 기준 -->
+    <!-- 최상위폴더 - /(젤 위의 폴더에서) -> assets -> / -> img -> / -> naver -->
+    <img src="/assets/img/naver.png">
+    <!-- 현재위치를 기준 - ../(폴더 밖으로 나가서) -> assets -> / -> img -> / -> naver -->
+    <img src="../assets/img/naver.png">
+</body>
+
+</html>
